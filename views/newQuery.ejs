@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+<div class="background">
+  <div class="blur">
+      <div class="card">
+        <h1> The current weather in <%=query%> is: <%=description%></h1>
+        <img src=<%=imageURL%> alt="weather icon">
+        <h1>Temp: <%=temp%> °F.</h1>
+
+
+        <form class="form" action="/" method="post">
+        <label for="zipInput">Enter a Zip Code:</label>
+        <input id="zipInput" type="text" name="zipCode" value="">
+        <button type="submit" class="btn btn-success">Success</button>
+        </form>
+        </div>
+
+    </div>
+  </div>
+  </body>
+</html>
