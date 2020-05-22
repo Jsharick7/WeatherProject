@@ -1,4 +1,5 @@
 const express = require("express");
+
 const app = express();
 const https = require("https");
 const bodyParser = require("body-parser");
@@ -9,7 +10,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/index.html");
+  res.render("index.ejs",{});
 
 });
 
